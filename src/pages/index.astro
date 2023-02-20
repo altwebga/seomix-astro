@@ -34,18 +34,19 @@ const projects = (await getCollection('work'))
 					tagline="Адекватный креатив и технологичные решения для вашего бизнеса"
 					align="start"
 				>
-					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+					<div class="start-project">
+						<CallToAction href="/work/">
+							Начать проект
+							<Icon icon="arrow-right" size="1.2em" />
+						</CallToAction>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Дизан сайтов в Горно-Алтайске"
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/services-image-25.png"
 				/>
 			</header>
 
@@ -55,8 +56,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Новые проекты</h3>
+					<p>Практически для всех сайтов настроена и запущена контектсная реклама. Окупаемость меньше 6 месяцев.</p>
 				</header>
 
 				<div class="gallery">
@@ -73,7 +74,7 @@ const projects = (await getCollection('work'))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						Все работы
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
@@ -81,19 +82,18 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Технологии</h3>
 					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
+						Никаких дешовых конструторов, только современные технологии которые использую такие гиганты как Tesla, Google, Яндекс и другие крупные технологические компании.
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['/assets/technologies/reactjs.svg', '/assets/technologies/astro.svg', '/assets/technologies/expressjs.svg', '/assets/technologies/tailwindcss.svg', '/assets/technologies/mongodb.svg','/assets/technologies/html5.svg','/assets/technologies/nodejs.svg','/assets/technologies/nginx.svg'].map((brand) => (
 								<li class="mention-card">
-									<p>{brand}</p>
+									<img src={brand}>
 								</li>
 							))
 						}
@@ -114,7 +114,7 @@ const projects = (await getCollection('work'))
 		gap: 2rem;
 	}
 
-	.roles {
+	.start-project {
 		display: none;
 	}
 
@@ -122,8 +122,6 @@ const projects = (await getCollection('work'))
 		aspect-ratio: 5 / 4;
 		object-fit: cover;
 		object-position: top;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
 	}
 
 	@media (min-width: 50em) {
@@ -134,15 +132,15 @@ const projects = (await getCollection('work'))
 			gap: 3.75rem;
 		}
 
-		.roles {
+		.start-project {
 			margin-top: 0.5rem;
 			display: flex;
 			gap: 0.5rem;
 		}
 
 		.hero img {
-			aspect-ratio: 3 / 4;
-			border-radius: 4.5rem;
+			aspect-ratio: 5 / 6;
+			border: none;
 			object-fit: cover;
 		}
 	}
@@ -237,14 +235,14 @@ const projects = (await getCollection('work'))
 		border: 1px solid var(--gray-800);
 		border-radius: 1.5rem;
 		color: var(--gray-300);
-		background: var(--gradient-subtle);
+		background: #f5f5f5;
 		box-shadow: var(--shadow-sm);
 	}
 
 	@media (min-width: 50em) {
 		.mention-card {
 			border-radius: 1.5rem;
-			height: 9.5rem;
+			height: 8rem;
 		}
 	}
 </style>

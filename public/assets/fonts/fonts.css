@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'PFDin';
+	font-style:  normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("../fonts/PFDinTextUniversal.woff2") format("woff2"),
+			 url("../fonts/PFDinTextUniversal.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'PFDin';
+	font-style:  normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("../fonts/PFDinTextUniversal-Medium.woff2") format("woff2"),
+			 url("../fonts/PFDinTextUniversal-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'PFDin';
+	font-style:  normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("../fonts/PFDinTextUniversal-Bold.woff2") format("woff2"),
+			 url("../fonts/PFDinTextUniversal-Bold.woff") format("woff");
+}
