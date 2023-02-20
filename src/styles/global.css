@@ -67,8 +67,8 @@
 	/* Fonts */
 	--font-system: system-ui, -apple-system, BlinkMacSystemFont, 'PFDin', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-body: 'Public Sans', var(--font-system);
-	--font-brand: Rubik, var(--font-system);
+	--font-body: 'PFDin', var(--font-system);
+	--font-brand: PFDin, var(--font-system);
 
 	/* Transitions */
 	--theme-transition: 0.2s ease-in-out;
@@ -153,7 +153,7 @@ h4,
 h5 {
 	line-height: 1.1;
 	font-family: var(--font-brand);
-	font-weight: 600;
+	font-weight: 400;
 	color: var(--gray-100);
 }
 
